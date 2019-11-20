@@ -17,6 +17,7 @@ public class UserController {
     @RequestMapping(value = "/sendsms/{mobile}",method = RequestMethod.POST)
     public Result sendSms(@PathVariable String mobile){
         userService.sendSms(mobile);
+        System.out.println("hello");
         return new Result(true, StatusCode.OK,"发送成功");
 
     }
