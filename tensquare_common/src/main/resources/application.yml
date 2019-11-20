@@ -1,0 +1,4 @@
+jwt:
+  config:
+    key: sky
+    ttl: 360000
