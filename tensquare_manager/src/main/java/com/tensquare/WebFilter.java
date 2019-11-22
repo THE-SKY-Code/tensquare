@@ -57,7 +57,7 @@ public class WebFilter extends ZuulFilter {
         context.setResponseStatusCode(401);//http状态码
         context.setResponseBody("无权访问");
         context.getResponse().setContentType("text/html;charset=UTF-8");
-        System.out.println("hello");
+
         return null;
     }
 }
